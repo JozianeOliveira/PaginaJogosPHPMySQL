@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
+    require_once "includes/banco.php"
     <div id="corpo">
         <h1>Escolha seu Jogo</h1>
         <table class="listagem">
