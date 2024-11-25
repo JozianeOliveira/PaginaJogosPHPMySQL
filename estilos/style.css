@@ -18,22 +18,32 @@ table.listagem {
     text-align: left;
     border-collapse: collapse;
 }
+
 table.listagem tr {
     height: 50px;
 }
+
 table.listagem td {
     /*border: 1px solid #ddd;*/
     padding: 10px;
 }
+
 table.listagem tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 table.listagem td:nth-child(1) {
     width: 50px;
 }
+
 table.listagem td:nth-child(3) {
     width: 90px;
 }
+
+table.detalhes {
+    width: 100%;
+}
+
 img.mini {
     width: 50px 
 }
