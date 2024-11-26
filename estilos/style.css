@@ -44,6 +44,16 @@ table.detalhes {
     width: 100%;
 }
 
+table.detalhes td {
+    padding: 10px;
+    vertical-align: top;
+    /*border: 1px solid black;*/
+}
+
 img.mini {
-    width: 50px 
+    width: 50px; 
+}
+
+img.full {
+    height: 400px; 
 }

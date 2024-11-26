@@ -24,9 +24,11 @@
                 } else {
                     if ($busca->num_rows == 1) {
                         $reg = $busca->fetch_object();
-                        echo "<tr><td rowspan='3'> foto";
+                        $t = thumb($reg->capa);
+                        echo "<tr><td rowspan='3'><img src='$t' class='full'/>";
                         echo "<td><h2>$reg->nome</h2> ";
-                        echo "<tr><td> Descrição";
+                        echo "Nota: " . number_format($reg->nota, 1) . "/10";
+                        echo "<tr><td> $reg->descricao";
                         echo "<tr><td> Adm";
                     } else {
                         echo "<tr><td>Nenhum registro encontrado!";
@@ -34,6 +36,7 @@
                 }
             ?>
         </table>
+        <a href="index.php"><img src="icones/icoback.png" alt="Voltar"></a> 
     </div>
 </body>
 </html>
