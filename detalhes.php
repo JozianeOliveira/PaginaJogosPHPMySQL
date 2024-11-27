@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
 </head>
 <body>
     <?php 
@@ -37,7 +38,7 @@
                 }
             ?>
         </table>
-        <a href="index.php"><img src="icones/icoback.png" alt="Voltar"></a> 
+        <?php echo voltar() ?>
     </div>
     <?php include_once "rodape.php";?>
 </body>
