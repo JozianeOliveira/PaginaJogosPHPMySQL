@@ -13,15 +13,17 @@
         }
 
         function msg_sucesso($m) {
-            $resp = "<div class='sucesso'>$m</div>";
+            $resp = "<div class='sucesso'><span class='material-symbols-outlined'>task_alt</span> $m</div>";
             return $resp;
         }
 
         function msg_aviso($m) {
-
+            $resp = "<div class='aviso'><span class='material-symbols-outlined'>info</span> $m</div>";
+            return $resp;
         }
 
         function msg_erro($m) {
-
+            $resp = "<div class='erro'><span class='material-symbols-outlined'>error</span> $m</div>";
+            return $resp;
         }
     ?>
