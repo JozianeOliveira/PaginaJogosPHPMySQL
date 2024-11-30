@@ -6,7 +6,15 @@
         <title>Tela de Login</title>
         <link rel="stylesheet" href="estilos/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-
+        <style>
+            div#corpo {
+                width: 270px;
+                font-size: 15pt;
+            }
+            td {
+                padding: 6px;
+            }
+        </style>
     </head>
     <body>
         <?php 
