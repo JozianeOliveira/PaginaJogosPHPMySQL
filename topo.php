@@ -1,9 +1,11 @@
 <?php 
 echo "<header>";
-if (empty($_SESION['user'])) {
+if (empty($_SESSION['user'])) {
     echo "<a href= 'user-login.php'>Entrar</a>";
 } else {
-    echo "Olá, " . $_SESSION['user'];
+    echo "Olá, <strong>" . $_SESSION['nome'] . "</strong> | ";
+    echo "<a href='user-logout.php'>Sair</a>";
+    
 }
 echo "</header>";
 ?>
