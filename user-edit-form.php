@@ -1,6 +1,7 @@
 <?php 
     $q = "select usuario, nome, senha, tipo from usuarios where usuario='" . $_SESSION['user'] . "'";
     $busca = $banco->query($q);
+    $reg = $busca->fetch_object();
 ?>
 
 <h1>Alteração de Dados</h1>
