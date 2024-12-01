@@ -63,7 +63,15 @@
                             echo "<td><a href='detalhes.php?cod=$reg->cod'>$reg->nome</a>";
                             echo " [$reg->genero]";
                             echo "<br/>$reg->produtora";
-                            echo "<td>Adm";
+                            if (is_admin()) {
+                                echo "<td>";
+                                echo "<span class='material-symbols-outlined'>add_circle</span>";
+                                echo "<span class='material-symbols-outlined'>edit</span>";
+                                echo "<span class='material-symbols-outlined'>delete</span>";
+                            } elseif (is_editor()) {
+                                echo "<td>";
+                                echo "<span class='material-symbols-outlined'>edit</span>";
+                            }
                         }                   
                     }
                 }
