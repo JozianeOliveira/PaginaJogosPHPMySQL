@@ -6,7 +6,7 @@ if (empty($_SESSION['user'])) {
     echo "Olá, <strong>" . $_SESSION['nome'] . "</strong> | ";
     echo "Meus dados | ";
     if (is_admin()) {
-        echo "Novo usuário | ";
+        echo "<a href='user-new.php'>Novo usuário</a> | ";
         echo "Novo jogo | ";
     }
     echo "<a href='user-logout.php'>Sair</a>";
