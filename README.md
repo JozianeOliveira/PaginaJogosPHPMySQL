@@ -1,4 +1,4 @@
-<h1>Gerenciamento de Jogos - PHP com MySQL</h1>
+<h1>Gerenciamento de Jogos - PHP e MySQL</h1>
 <p align="left">🎮💻📊 Aplicação web para gerenciamento e exibição de informações sobre jogos, desenvolvida em PHP e MySQL. <br>
   
 📝📈 Inclui funcionalidades como listagem, busca, detalhes de jogos e administração de registros, com suporte a autenticação criptografada e interface responsiva.</p>
