@@ -13,10 +13,25 @@
             require_once "includes/banco.php";
             require_once "includes/login.php";
             require_once "includes/funcoes.php";
-        ?> 
+        ?>
         <div id="corpo">
             <?php 
-                
+                if (!is_admin()) {
+                    echo msg_erro('Área restrita! Você não é administrador!');
+                } else {
+                    if (!isset($_POST['jogo'])) {
+                        require "game-new-form.php";
+                    } else {
+                        $nome = $_POST['nome'] ?? null;
+                        $genero = $_POST['genero'] ?? null;
+                        $produtora = $_POST['produtora'] ?? null;
+                        $descricao = $_POST['descricao'] ?? null;
+                        $nota = $_POST['nota'] ?? null;
+                        $capa = $_POST['capa'] ?? null;
+
+                    }
+                }
+
                 echo voltar();
             ?>
         </div>
