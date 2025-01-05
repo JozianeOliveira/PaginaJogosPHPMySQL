@@ -65,7 +65,7 @@
                             echo "<br/>$reg->produtora";
                             if (is_admin()) {
                                 echo "<td>";
-                                echo "<span class='material-symbols-outlined'>add_circle</span>";
+                                echo "<a href='game-new-form.php'><span class='material-symbols-outlined'>add_circle</span></a>";
                                 echo "<span class='material-symbols-outlined'>edit</span>";
                                 echo "<span class='material-symbols-outlined'>delete</span>";
                             } elseif (is_editor()) {
