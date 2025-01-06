@@ -66,7 +66,7 @@
                             if (is_admin()) {
                                 echo "<td>";
                                 echo "<a href='game-new-form.php'><span class='material-symbols-outlined'>add_circle</span></a>";
-                                echo "<span class='material-symbols-outlined'>edit</span>";
+                                echo "<a href='edit-new-form.php?cod=$reg->cod'><span class='material-symbols-outlined'>edit</span></a>";
                                 echo "<span class='material-symbols-outlined'>delete</span>";
                             } elseif (is_editor()) {
                                 echo "<td>";
