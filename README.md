@@ -16,7 +16,6 @@
 <ul>
   <li> Implementação de paginação na listagem de jogos.</li>
   <li> Upload de novas capas diretamente pelo sistema.</li>
-  <li> Melhorar a responsividade para dispositivos móveis.</li>
 </ul>
 
 <h3 align="left">Tecnologias:</h3>
