@@ -34,13 +34,12 @@
                         echo "Nota: " . number_format($reg->nota, 1) . "/10";
                         if (is_admin()) {
                             echo "<a href='game-new-form.php'><span class='material-symbols-outlined'>add_circle</span></a>";
-                            echo "<span class='material-symbols-outlined'>edit</span>";
+                            echo "<a href='edit-new.php?cod=$reg->cod'><span class='material-symbols-outlined'>edit</span></a>";
                             echo "<span class='material-symbols-outlined'>delete</span>";
                         } elseif (is_editor()) {
-                            echo "   <span class='material-symbols-outlined'>edit</span>";
+                            echo "<a href='edit-new.php?cod=$reg->cod'><span class='material-symbols-outlined'>edit</span></a>";
                         }
                         echo "<tr><td> $reg->descricao";
-                        echo "<tr><td> Adm";
                     } else {
                         echo "<tr><td>Nenhum registro encontrado!";
                     }
