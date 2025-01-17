@@ -35,7 +35,7 @@
                         if (is_admin()) {
                             echo "<a href='game-new-form.php'><span class='material-symbols-outlined'>add_circle</span></a>";
                             echo "<a href='edit-new.php?cod=$reg->cod'><span class='material-symbols-outlined'>edit</span></a>";
-                            echo "<span class='material-symbols-outlined'>delete</span>";
+                            echo "<a href='delete-new.php'><span class='material-symbols-outlined'>delete</span></a>";
                         } elseif (is_editor()) {
                             echo "<a href='edit-new.php?cod=$reg->cod'><span class='material-symbols-outlined'>edit</span></a>";
                         }

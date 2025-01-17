@@ -67,7 +67,7 @@
                                 echo "<td>";
                                 echo "<a href='game-new.php'><span class='material-symbols-outlined'>add_circle</span></a>";
                                 echo "<a href='edit-new.php?cod=$reg->cod'><span class='material-symbols-outlined'>edit</span></a>";
-                                echo "<span class='material-symbols-outlined'>delete</span>";
+                                echo "<a href='delete-new.php'><span class='material-symbols-outlined'>delete</span></a>";
                             } elseif (is_editor()) {
                                 echo "<td>";
                                 echo "<a href='edit-new.php?cod=$reg->cod'><span class='material-symbols-outlined'>edit</span></a>";
